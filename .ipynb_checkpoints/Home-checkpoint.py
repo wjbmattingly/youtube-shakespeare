@@ -42,7 +42,8 @@ if st.sidebar.button("Search"):
     res = embeddings.search(query, num_results)
     indices = [index[0] for index in res]
     scores = [index[1] for index in res]
-    y = df[df.index.isin(indices)]
+    y = df[df.index.isin(indices)].drop(["Dataline", "PlayerLinenumber"], axis=1)
+
     y["similarity"] = scores
     if ignore_search_words == True:
         words = query.split()
