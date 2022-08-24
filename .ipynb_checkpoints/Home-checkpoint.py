@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from txtai.embeddings import Embeddings
 import gdown
+import os
 
 
 def download_files():
