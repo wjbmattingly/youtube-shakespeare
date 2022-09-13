@@ -1,3 +1,4 @@
 txtai
 pandas
 gdown
+tabulate
