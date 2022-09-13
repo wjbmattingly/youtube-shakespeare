@@ -16,7 +16,7 @@ def download_files():
 
     url_full = "https://drive.google.com/file/d/1ySyspDK7g1DQIVbegpDOpwv9FH73smiB/view?usp=sharing"
 
-    if os.path.exists("./models/shakespeare-index/embeddings"):
+    if os.path.exists("./models/shakespeare-index-full/embeddings"):
         pass
     else:
         output = "./models/shakespeare-index-full/embeddings"
