@@ -35,7 +35,7 @@ def load_df():
     df = pd.read_csv("data/shakespeare.csv")
     return df
 
-st.title("Shakespeare Search Engine")
+st.title("Semantic Shakespeare App")
 st.sidebar.image("images/shakespeare.png")
 st.sidebar.markdown("Developed by [W.J.B. Mattingly](https://www.wjbmattingly.com) using [Streamlit](https://www.streamlit.io) and [txtAI](https://github.com/neuml/txtai).", unsafe_allow_html=True)
 query = st.sidebar.text_input("Query")
