@@ -4,6 +4,9 @@ from txtai.embeddings import Embeddings
 import gdown
 import os
 
+st.set_page_config(layout="wide", page_title="Semantic Shakespeare")
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 def download_files():
     # url = "https://drive.google.com/file/d/1y7ZzHRXEyYkSWj3AH9-STUrxQcxaDt7I/view?usp=sharing"
@@ -35,7 +38,8 @@ def load_df():
     df = pd.read_csv("data/shakespeare.csv")
     return df
 
-st.title("Semantic Shakespeare App")
+st.title("Semantic   Shakespeare")
+# st.image("images/semantic-shakespeare.png")
 st.sidebar.image("images/shakespeare.png")
 st.sidebar.markdown("Developed by [W.J.B. Mattingly](https://www.wjbmattingly.com) using [Streamlit](https://www.streamlit.io) and [txtAI](https://github.com/neuml/txtai).", unsafe_allow_html=True)
 query = st.sidebar.text_input("Query")
@@ -84,6 +88,7 @@ if st.sidebar.button("Search"):
     # y = df[df.index.isin(indices)].drop(["Dataline", "PlayerLinenumber"], axis=1)
 
     y["similarity"] = scores
+    y = y.drop(["Dataline"], axis=1)
     if ignore_search_words == True:
         words = query.split()
         for word in words:
