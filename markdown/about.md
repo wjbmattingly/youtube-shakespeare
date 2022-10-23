@@ -19,7 +19,8 @@ The populated the results are a DataFrame (spreadsheet) with 6 columns.
 
 The results have syntax highlighting. The more relevant the word, the darker the highlighting.
 
-
+## Dataset
+Original dataset was found [here](https://www.kaggle.com/datasets/kingburrito666/shakespeare-plays)
 
 ## Version History
 ### Current Version: 0.0.2
