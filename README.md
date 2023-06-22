@@ -1,6 +1,6 @@
 # YouTube Shakespeare Semantic Search Application 
 
-This repository (https://github.com/wjbmattingly/youtube-shakespeare) contains the source code for a Streamlit application that leverages the powerful capabilities of TxtAI for semantic search across the entire Shakespeare corpus. The live application can be accessed at https://streamlit.as.uky.edu/semantic-shakespeare/.
+This [repository](https://github.com/wjbmattingly/youtube-shakespeare) contains the source code for a Streamlit application that leverages the powerful capabilities of TxtAI for semantic search across the entire Shakespeare corpus. The live application can be accessed at [here](https://streamlit.as.uky.edu/semantic-shakespeare/).
 
 ## About The Project
 
